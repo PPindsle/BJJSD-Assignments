@@ -29,6 +29,14 @@ public class Student {
 
     private List<String> courses = new ArrayList<String>();
 
+    public static void main(String[] args) {
+        Student john = new Student("John", "Smith", 343543643);
+        System.out.println(john);
+
+        Student jennifer = new Student("Jennifer", "Johnson", 827304345);
+        System.out.println(jennifer);
+    }
+
     public Student(String firstName, String lastName, int ssn) {
         if (firstName.isEmpty() || lastName.isEmpty()) {
             throw new IllegalArgumentException("Firstname and lastname must be provided.");
